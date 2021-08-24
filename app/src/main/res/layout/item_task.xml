@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/checkbox_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:minWidth="0dp"
+        android:minHeight="0dp" />
+
+    <TextView
+        android:id="@+id/title_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/checkbox_completed"
+        android:layout_alignBottom="@id/checkbox_completed"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@id/label_priority"
+        android:layout_toEndOf="@id/checkbox_completed"
+        android:ellipsize="end"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        tools:text="Item Title" />
+
+    <TextView
+        android:id="@+id/modified_timestamp_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_task"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@id/label_priority"
+        android:layout_toEndOf="@id/checkbox_completed"
+        android:fontFamily="@font/helvetica_neue_medium"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="12sp"
+        tools:text="16-08-2021" />
+
+
+    <ImageView
+        android:id="@+id/label_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_label_priority"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>
+
+
+

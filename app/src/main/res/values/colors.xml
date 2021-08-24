@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- added colors -->
+    <color name="colorPrimaryText">#1D2133</color>
+    <color name="colorSecondaryText">#7988A0</color>
+    <color name="colorLightRed">#bf3d3d</color>
+    <color name="colorDarkRed">#C62430</color>
+    <color name="colorLightBlue">#01b4e4</color>
+    <color name="colorEditText">#161716</color>
+    <color name="colorDarkBlue">#3F48CC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLight">#333333</color>
+    <color name="colorBlack20">#5d686b</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite84">#D6FFFFFF</color>
+    <color name="colorWhite74">#BDFFFFFF</color>
+    <color name="colorGray">#7C7C7C</color>
+    <color name="colorBrown">#454444</color>
+    <color name="colorLightGray">#BD7C7C7C</color>
+    <color name="colorThinGray">#407C7C7C</color>
+    <color name="colorDarkGray">#454545</color>
+    <color name="colorGray25">#407C7C7C</color>
+    <color name="colorUnselectedText">#DCDCDC</color>
+    <color name="colorDarkBG">#081C22</color>
+    <color name="colorGreen">#18C872</color>
+    <color name="colorLightGreen">#37ecba</color>
+    <color name="colorBrightCyan">#1ABC9C</color>
+    <color name="colorDullGreen">#B31A3D27</color>
+    <color name="colorYellow">#fbd104</color>
+    <color name="colorDarkYellow">#D6D209</color>
+    <color name="colorDullYellow">#B3504E1F</color>
+    <color name="colorOlive">#05776A</color>
+    <color name="colorOrangeVibrant">#f36e21</color>
+    <color name="colorOrange">#f7931e</color>
+    <color name="colorPurple">#9400D3</color>
+    <color name="colorCrimson">#DC143C</color>
+    <color name="colorFirebrick">#B22222</color>
+    <color name="colorLightSeaGreen">#21B6A8</color>
+    <color name="coloDarkGray2">#FF424242</color>
+    <color name="colorBlueGrotto">#189AB4</color>
+    <color name="colorNavyBlue">#05445E</color>
+    <color name="colorEasternBlue">#2596be</color>
+    <color name="colorSkyBlue">#5aaeea</color>
+</resources>

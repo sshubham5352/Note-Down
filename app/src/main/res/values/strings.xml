@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Note Down</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="priority_task">Priority Task</string>
+    <string name="temp_timestamp">7:30pm, 16–08–2021</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_title">Sort by title</string>
+    <string name="hide_completed_tasks">Hide completed tasks</string>
+    <string name="delete_completed_tasks">Delete completed tasks</string>
+</resources>
