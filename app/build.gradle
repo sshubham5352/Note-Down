@@ -57,6 +57,7 @@ dependencies {
     //toolbar
     implementation 'com.github.udioshi85:libSearchToolbar:1.3.0'
 
+
     // Fragment
     implementation "androidx.fragment:fragment-ktx:$fragmentVersion"
 
