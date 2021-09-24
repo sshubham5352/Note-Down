@@ -4,8 +4,8 @@ import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.notedown.util.Constants
+import com.example.notedown.util.Helper
 import kotlinx.android.parcel.Parcelize
-import java.text.DateFormat
 
 @Entity(tableName = Constants.TASK_TABLE)
 @Parcelize
@@ -14,10 +14,13 @@ data class Task(
     val description: String = "N/A",
     val isPriority: Boolean = false,
     val isCompleted: Boolean = false,
-    val timeInMillis: Long = System.currentTimeMillis(),
+    val createdTimeInMillis: Long = System.currentTimeMillis(),
+    val modifiedTimeInMillis: Long = createdTimeInMillis,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
+    val relativeTimeStamp: String
+        get() = Helper.getRelativeTimeStamp(modifiedTimeInMillis)
 
-    val modifiedTime: String
-        get() = DateFormat.getTimeInstance().format(timeInMillis)
+    val createTimeStamp: String
+        get() = Helper.primaryDateFormat.format(createdTimeInMillis)
 }

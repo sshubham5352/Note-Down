@@ -15,7 +15,7 @@ interface TaskDao {
     @Query("SELECT * FROM task_table WHERE (isCompleted != :hideCompleted OR isCompleted = 0) AND title LIKE '%' || :searchQuery || '%' ORDER BY isPriority DESC, title")
     fun getTasksSortedByTitle(searchQuery: String, hideCompleted: Boolean): Flow<List<Task>>
 
-    @Query("SELECT * FROM task_table WHERE (isCompleted != :hideCompleted OR isCompleted = 0) AND title LIKE '%' || :searchQuery || '%' ORDER BY isPriority DESC, timeInMillis")
+    @Query("SELECT * FROM task_table WHERE (isCompleted != :hideCompleted OR isCompleted = 0) AND title LIKE '%' || :searchQuery || '%' ORDER BY isPriority DESC, createdTimeInMillis DESC")
     fun getTasksSortedByDateCreated(searchQuery: String, hideCompleted: Boolean): Flow<List<Task>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -26,4 +26,7 @@ interface TaskDao {
 
     @Delete
     suspend fun delete(task: Task)
+
+    @Query("DELETE FROM task_table WHERE isCompleted = 1")
+    suspend fun deleteAllCompletedTasks()
 }

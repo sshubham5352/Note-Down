@@ -2,20 +2,22 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".modules.addedittask.AddEditTaskFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="12dp">
 
         <TextView
-            android:id="@+id/time_stamp_task"
+            android:id="@+id/relative_time_stamp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/helvetica_neue_bold_condensed"
+            android:fontFamily="@font/helvetica_neue_italic"
             android:gravity="end"
             android:text="@string/temp_timestamp"
             android:textColor="@color/colorSecondaryText"
@@ -29,14 +31,15 @@
                 android:id="@+id/title_task"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
                 android:background="@color/white"
-                android:fontFamily="@font/helvetica_neue_bold"
+                android:fontFamily="@font/helvetica_neue_medium"
                 android:hint="@string/title"
                 android:importantForAutofill="no"
                 android:inputType="textCapSentences"
                 android:maxLength="40"
                 android:textColor="@color/colorPrimaryText"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -47,15 +50,17 @@
                 android:id="@+id/description_task"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
                 android:layout_marginTop="16sp"
                 android:background="@color/white"
-                android:fontFamily="@font/helvetica_neue_bold"
+                android:fontFamily="@font/helvetica_neue_medium"
                 android:hint="@string/description"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
                 android:inputType="textMultiLine"
+                android:maxLines="10"
                 android:textColor="@color/colorPrimaryText"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
@@ -63,10 +68,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/helvetica_neue_medium"
+            android:fontFamily="@font/helvetica_neue_bold"
             android:text="@string/priority_task"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/created_time_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/helvetica_neue_bold_condensed"
+            android:text="@string/temp_timestamp"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="11sp" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

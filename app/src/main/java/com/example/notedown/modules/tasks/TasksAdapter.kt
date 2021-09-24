@@ -44,12 +44,11 @@ class TasksAdapter(private val listener: OnTaskItemClickListener) :
         fun bind(task: Task) {
             binding.apply {
                 titleTask.text = task.title
-                modifiedTimestampTask.text = task.modifiedTime
+                modifiedTimestampTask.text = task.relativeTimeStamp
                 checkboxCompleted.isChecked = task.isCompleted
                 titleTask.paint.isStrikeThruText = task.isCompleted
                 labelPriority.isVisible = task.isPriority
             }
-
         }
     }
 

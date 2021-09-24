@@ -9,4 +9,9 @@
     <string name="sort_by_title">Sort by title</string>
     <string name="hide_completed_tasks">Hide completed tasks</string>
     <string name="delete_completed_tasks">Delete completed tasks</string>
+
+    <!-- variable string resources -->
+    <!--    example:- string name="welcome_messages">Hello, %1$s! You have %2$d new messages.</string>-->
+    <string name="created_on">Created on: %1$s</string>
+
 </resources>
